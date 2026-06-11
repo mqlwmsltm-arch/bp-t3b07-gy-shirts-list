@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가양 셔츠룸 모음 블로그 | 형들이 알려주는 셔츠룸 꿀팁</title>
+    <meta name="description" content="가양 셔츠룸 모음, 처음 가는 형들을 위한 완벽 가이드. 시스템, 가격, 분위기까지 실제 후기로 준비했어. 가양동 셔츠룸 고민 끝내자.">
+    <meta name="keywords" content="가양 셔츠룸, 가양 셔츠룸 모음, 가양동 셔츠룸, 가양 셔츠룸 추천, 가양 셔츠룸 가격, 가양 셔츠룸 후기, 가양 셔츠룸 블로그">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <link rel="canonical" href="https://t3b07-gy-shirts-list.vercel.app/blog">
+    <meta property="og:title" content="가양 셔츠룸 모음 블로그 - 형들이 직접 겪은 셔츠룸 이야기">
+    <meta property="og:description" content="가양 셔츠룸 모음, 처음 가는 형들도 문제없어. 진짜 후기와 팁으로 준비한 가양동 셔츠룸 블로그.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        a:hover {
+            opacity: 0.7;
+        }
+        img, svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #d2d2d7;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+        .logo a {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1d1d1f;
+            letter-spacing: -0.02em;
+        }
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        .nav-links a {
+            font-size: 0.95rem;
+            color: #1d1d1f;
+            font-weight: 500;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+        .nav-links a:hover {
+            border-bottom-color: #0066cc;
+            opacity: 1;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 8px;
+        }
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 2.5px;
+            background-color: #1d1d1f;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        .hero {
+            background-color: #ffffff;
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #6e6e73;
+            max-width: 700px;
+            margin: 0 auto 32px;
+        }
+        .blog-content {
+            background-color: #ffffff;
+            padding: 60px 0;
+        }
+        .blog-article {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .blog-article h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+            color: #1d1d1f;
+        }
+        .blog-article h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            color: #1d1d1f;
+        }
+        .blog-article p {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+            color: #3a3a3c;
+        }
+        .blog-article .highlight-box {
+            background-color: #f5f5f7;
+            border-left: 4px solid #0066cc;
+            padding: 20px 24px;
+            margin: 24px 0;
+            border-radius: 0 12px 12px 0;
+        }
+        .blog-article .highlight-box p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+        .blog-article ul {
+            margin-bottom: 24px;
+            padding-left: 24px;
+        }
+        .blog-article ul li {
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+            color: #3a3a3c;
+        }
+        .blog-article .cta-button {
+            display: inline-block;
+            background-color: #0066cc;
+            color: #ffffff;
+            padding: 14px 32px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-top: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .blog-article .cta-button:hover {
+            background-color: #0055b3;
+            opacity: 1;
+        }
+        footer {
+            background-color: #f5f5f7;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid #d2d2d7;
+        }
+        footer p {
+            color: #6e6e73;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 64px;
+                left: 0;
+                right: 0;
+                background-color: #ffffff;
+                flex-direction: column;
+                padding: 24px;
+                gap: 20px;
+                border-bottom: 1px solid #d2d2d7;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .blog-article h2 {
+                font-size: 1.5rem;
+            }
+            .blog-article h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-inner">
+                <div class="logo">
+                    <a href="/">가양 셔츠룸 모음</a>
+                </div>
+                <nav>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="/">홈</a></li>
+                        <li><a href="/list">리스트</a></li>
+                        <li><a href="/blog">블로그</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                    </ul>
+                </nav>
+                <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>가양 셔츠룸 모음 블로그</h1>
+            <p>형들이 직접 경험하고 정리한 가양동 셔츠룸 이야기. 처음 가는 형들도 후회 없게 도와줄게.</p>
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-article">
+                <h2>가양 셔츠룸 모음, 처음 가는 형들을 위한 완벽 가이드</h2>
+                <p>야, 형. 가양 셔츠룸 처음 가보려니까 뭐가 뭔지 모르겠지? 나도 처음엔 그랬어. 검색해도 정보는 너무 많고, 어디가 진짜인지 알 수가 없더라고. 그래서 내가 직접 여러 군데 다녀본 경험을 바탕으로 가양 셔츠룸 모음 꿀팁을 정리해봤어. 형만 믿고 따라와.</p>
+
+                <div class="highlight-box">
+                    <p>💡 핵심 요약: 가양 셔츠룸은 시스템과 분위기가 천차만별이야. 사전에 확실히 비교하는 게 실패 확률을 줄이는 지름길이야.</p>
+                </div>
+
+                <h3>1. 가양 셔츠룸, 뭐가 다를까?</h3>
+                <p>가양동 셔츠룸은 다른 지역이랑 좀 달라. 일단 업소마다 컨셉이 확실해. 어떤 곳은 깔끔한 비즈니스 느낌, 어떤 곳은 편하게 놀 수 있는 분위기. 형이 원하는 스타일을 먼저 정하는 게 중요해. 나 같은 경우는 처음엔 가격만 보고 갔다가 분위기가 안 맞아서 실패한 적도 있어. 그러니까 꼭 후기랑 시스템을 꼼꼼히 체크해봐.</p>
+
+                <h3>2. 시스템 비교는 필수야</h3>
+                <p>가양 셔츠룸 모음 중에서도 시스템이 진짜 중요해. 입장부터 퇴장까지 어떤 식으로 진행되는지, 추가 비용은 없는지, 어떤 서비스가 포함되는지. 이걸 모르면 나중에 당황할 수 있어. 내가 추천하는 방법은 전화로 미리 물어보는 거야. "형, 시스템이 어떻게 되나요?" 이렇게 한마디면 대부분 친절하게 알려줘. 그리고 가양 셔츠룸 중에 시스템이 투명한 곳이 진짜라는 거, 명심해.</p>
+
+                <div class="highlight-box">
+                    <p>👊 형의 꿀팁: 전화할 때는 "가격 포함 내역"과 "추가 비용"을 꼭 확인해. 그러면 나중에 난감한 상황을 피할 수 있어.</p>
+                </div>
+
+                <h3>3. 가격, 진짜 가짜 구분하기</h3>
+                <p>인터넷에 떠도는 가격 정보는 믿을 게 못 될 때가 많아. 가양 셔츠룸 모음이라고 해서 다 같은 가격이 아니야. 어떤 곳은 기본 가격은 낮은데 옵션이 많고, 어떤 곳은 처음부터 올인클루시브 방식이야. 내 경험상, 너무 싼 곳은 피하는 게 좋아. 이유는 뻔하지. 그리고 가양동 셔츠룸 중에서도 가격 대비 만족도가 높은 곳이 있더라고. 그런 곳은 보통 후기가 많고 재방문율이 높아.</p>
+
+                <h3>4. 분위기와 서비스, 직접 느껴봐</h3>
+                <p>사실 가양 셔츠룸의 진짜 매력은 분위기야. 인테리어, 조명, 음악, 직원들의 태도까지. 이 모든 게 어우러져야 완벽한 시간을 보낼 수 있어. 나는 개인적으로 너무 시끄럽지 않고, 적당히 프라이빗한 공간을 좋아해. 가양 셔츠룸 모음 중에서도 인테리어에 신경 쓴 곳은 바로 티가 나더라고. 형들도 직접 가보면 알 거야.</p>
+
+                <h3>5. 예약 팁: 이렇게 하면 성공한다</h3>
+                <ul>
+                    <li><strong>시간대:</strong> 주말보다는 평일 저녁이 여유로워. 주말에는 예약이 필수야.</li>
+                    <li><strong>인원:</strong> 2~3명이 적당해. 너무 많으면 분위기가 산만해질 수 있어.</li>
+                    <li><strong>미리 확인:</strong> 전화로 예약할 때 원하는 시스템과 가격을 다시 한번 확인해.</li>
+                    <li><strong>후기 체크:</strong> 가양 셔츠룸 모음 블로그나 카페에서 최근 후기를 꼭 읽어봐. 도움이 많이 돼.</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p>🔥 형의 한마디: 진짜 가양 셔츠룸 모음에서 후회 없는 선택을 하고 싶다면, 준비를 철저히 해. 그러면 분위기, 시스템, 가격 모든 면에서 만족할 수 있어.</p>
+                </div>
+
+                <p>자, 형. 이제 가양 셔츠룸 모음에 대한 자신감이 생겼지? 더 궁금한 게 있으면 언제든지 연락해. 형들이 직접 경험한 진짜 정보를 나누는 게 우리 스타일이잖아. 가양동 셔츠룸에서 좋은 시간 보내길 바라!</p>
+
+                <a href="/list" class="cta-button">가양 셔츠룸 모음 보러 가기</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 가양 셔츠룸 모음. 모든 정보는 실제 경험을 바탕으로 작성되었습니다.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
